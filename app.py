@@ -1,6 +1,6 @@
 
 import streamlit as st
-import fitz
+import pymupdf
 
 st.set_page_config(
     page_title="DocuMatch AI",
@@ -21,10 +21,10 @@ if uploaded_file is not None:
     try:
         pdf_bytes = uploaded_file.getvalue()
 
-        with fitz.open(
-            stream=pdf_bytes,
-            filetype="pdf"
-        ) as pdf:
+        with pymupdf.open(
+    stream=pdf_bytes,
+    filetype="pdf"
+) as pdf:
             extracted_text = "\n".join(
                 page.get_text()
                 for page in pdf

@@ -1,13 +1,13 @@
 # Phase 2 - PDF Testing Checklist
 
 ## 1. PDF Upload Tests
-- [ ] Upload purchase_order.pdf.
-- [ ] Upload invoice (1).pdf.
-- [ ] Check that the app accepts PDF files.
+- [x] Upload purchase_order.pdf.
+- [x] Upload invoice (1).pdf.
+- [x] Check that the app accepts PDF files.
 - [ ] Check that the uploaded file name is displayed.
 
 ## 2. Text Extraction Tests
-- [ ] Check that text is extracted from the purchase order.
+- [x] Check that text is extracted from the purchase order.
 - [ ] Check that text is extracted from the invoice.
 - [ ] Verify that item names are displayed correctly.
 - [ ] Verify that quantities and prices are displayed correctly.
